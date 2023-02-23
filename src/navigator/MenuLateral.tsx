@@ -4,6 +4,7 @@ import { SettingScreen } from '../screens/SettingScreen';
 import { StackNavigator } from './StackNavigator';
 import { Image, useWindowDimensions, View, TouchableOpacity, Text } from 'react-native';
 import { styles } from '../theme/appTheme';
+import { createStackNavigator } from '@react-navigation/stack';
 
 const Drawer = createDrawerNavigator();
 
