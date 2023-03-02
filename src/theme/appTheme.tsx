@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     globalMargin: {
+        flex:1,
         marginHorizontal: 20,
     },
     title: {
@@ -9,17 +10,15 @@ export const styles = StyleSheet.create({
         marginBottom: 10
     },
     botonGrande: {
-        width: 100,
-        height: 100,
-        backgroundColor: 'red',
         borderRadius: 20,
         alignItems: 'center',
         justifyContent: 'center',   
         marginRight: 10,
     },
+    // COLOR DEL NAVBAR
     botonGrandeTexto: {
-        color: 'white',
-        fontSize: 18,
+        color: '#2a0055',
+        fontSize: 10,
         fontWeight: 'bold',    
     },
     avatarContainer: {
@@ -40,6 +39,43 @@ export const styles = StyleSheet.create({
     },
     menuTexto: {
         fontSize: 20,
-    }
+    },
+
+// TABLA - GOLES - ASISTENCIAS - NOTICIAS
+    navbar: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        rowGap: 10,
+    }, 
+    // EQUIPO INDIVIDUAL 
+    teamBox: {
+        width: 120,
+        height: 80,
+        backgroundColor: '#F3FAFA',
+
+        // backgroundColor: 'yellow',
+        // borderRadius: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row',
+        borderColor: 'grey',
+        borderRadius: 100,
+
+    },
+    // SOLO UNA ROW DE EQUIPOS (CONTIENE 3) 
+    teamBoxContainer: {
+        marginVertical: 20,
+        flexDirection: 'row',
+        gap: 10,
+    },         
+    imgStyle: {
+        alignSelf: 'center',
+        
+        width: 70,
+        height: 70,
+        marginTop: 30,
+    },
+    
 
 });
